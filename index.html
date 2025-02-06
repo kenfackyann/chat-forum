@@ -1,29 +1,62 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    <!-- <link rel="stylesheet" href="css/style.css" /> -->
-    <meta name="description" content="" />
-
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:image:alt" content="" />
-
+    <title>Chat Forum</title>
+    <meta name="description" content="Chat forum for discussions" />
+    
     <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="icon.png" />
-<link rel="stylesheet" href="./css/style.css">
-    <link rel="manifest" href="site.webmanifest" />
-    <meta name="theme-color" content="#fafafa" />
-
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-   
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar_title">CHAT FORUM</div>
+        <div class="navlinks">
+          <a href="#">Home</a>
+          <a href="#">New Chats</a>
+          <a href="#">Groups</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="signin">
+          <a href="#" class="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bodyContent">
+      <div class="content">
+        <div class="m_title">MESSAGES</div>
+        <div class="messages_container">
+          <div class="messages">
+            <div class="message">
+              <div class="sender">
+                <div class="profile_picture"></div>
+                <div class="sender_name">Sender 1</div>
+              </div>
+              <div class="messages_content">Hello! How are you?</div>
+              <button class="reply">Reply</button>
+            </div>
+            <div class="message">
+              <div class="sender">
+                <div class="profile_picture"></div>
+                <div class="sender_name">Sender 2</div>
+              </div>
+              <div class="messages_content">I'm good, thanks! What about you?</div>
+              <button class="reply">Reply</button>
+            </div>
+          </div>
+        </div>
+        <div class="message_input">
+          <input type="text" class="messageBox"  />
+          <button id="sendMessage">Send</button>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/script.js"></script>
   </body>
 </html>
